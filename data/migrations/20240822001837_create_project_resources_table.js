@@ -1,6 +1,6 @@
 exports.up = function(knex) {
     return knex.schema.createTable('project_resources', table => {
-      table.increments('id'); // primary key
+      table.increments('id'); 
       table.integer('project_id')
         .unsigned()
         .notNullable()

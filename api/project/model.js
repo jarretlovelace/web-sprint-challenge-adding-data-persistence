@@ -8,7 +8,7 @@ function createProject(project) {
           .first()
           .then(project => ({
             ...project,
-            project_completed: Boolean(project.project_completed), // Ensure boolean
+            project_completed: Boolean(project.project_completed), 
           }));
       });
   }
